@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrology Bot</title> <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom scrollbar for the chat area */
+        .chat-messages::-webkit-scrollbar {
+            width: 8px;
+        }
+        .chat-messages::-webkit-scrollbar-track {
+            background: #fdf5e6; /* Light cream background for scroll track */
+            border-radius: 10px;
+        }
+        .chat-messages::-webkit-scrollbar-thumb {
+            background: #b8860b; /* Medium brown (goldenrod) for scroll thumb */
+            border-radius: 10px;
+        }
+        .chat-messages::-webkit-scrollbar-thumb:hover {
+            background: #8b4513; /* Darker brown (saddlebrown) on hover */
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        /* Custom classes for message bubbles */
+        .user-message-bubble {
+            background-color: #8B4513; /* SaddleBrown - a rich brown */
+            color: white;
+        }
+        .bot-message-bubble {
+            background-color: #FFF8DC; /* Cornsilk - a soft, light cream */
+            color: #5A2D0C; /* Darker brown for text on cream */
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-stone-700 to-amber-900 min-h-screen flex items-center justify-center p-4"> <div class="bg-white rounded-2xl shadow-3xl w-full max-w-md flex flex-col h-[85vh] overflow-hidden transform transition-all duration-300 hover:scale-[1.01]">
+        <div class="bg-gradient-to-r from-amber-700 to-stone-700 text-white p-5 rounded-t-2xl shadow-lg flex items-center justify-center space-x-3"> <h1 class="text-3xl font-bold text-center">🔮 Astrology Bot 🌟</h1> </div>
+
+        <div id="chat-messages" class="flex-1 p-4 overflow-y-auto space-y-4 chat-messages">
+            <div class="flex justify-start">
+                <div class="bot-message-bubble p-3 rounded-xl max-w-[80%] shadow-md">
+                    Hello! I am your Astrology Bot. Ask me anything about zodiac signs.
+                </div>
+            </div>
+        </div>
+
+        <div class="p-4 border-t-2 border-gray-100 bg-gray-50 flex items-center space-x-3">
+            <input
+                type="text"
+                id="user-input"
+                placeholder="Unveil your destiny..."
+                class="flex-1 p-3 border border-gray-300 rounded-full focus:outline-none focus:ring-3 focus:ring-amber-500 focus:border-transparent text-gray-800 transition duration-200 ease-in-out shadow-sm" onkeypress="handleKeyPress(event)"
+            />
+            <button
+                id="send-button"
+                class="bg-amber-700 text-white p-3 rounded-full hover:bg-amber-800 focus:outline-none focus:ring-3 focus:ring-amber-500 focus:ring-offset-2 transition duration-200 ease-in-out shadow-lg transform hover:scale-105" onclick="sendMessage()"
+            >
+                Send
+            </button>
+            <button
+                id="reset-button"
+                class="bg-stone-400 text-white p-3 rounded-full hover:bg-stone-600 focus:outline-none focus:ring-3 focus:ring-stone-500 focus:ring-offset-2 transition duration-200 ease-in-out shadow-lg transform hover:scale-105" onclick="resetConversation()"
+                style="margin-left: 8px;"
+            >
+                Reset
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Generate a unique session ID for this user's browser session
+        const sessionId = localStorage.getItem('astrologyBotSessionId') || uuidv4();
+        localStorage.setItem('astrologyBotSessionId', sessionId);
+
+        function uuidv4() {
+            return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+                var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+                return v.toString(16);
+            });
+        }
+
+        const chatMessages = document.getElementById('chat-messages');
+        const userInput = document.getElementById('user-input');
+        const sendButton = document.getElementById('send-button');
+
+        function appendMessage(sender, message) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `flex ${sender === 'user' ? 'justify-end' : 'justify-start'}`;
+            messageDiv.innerHTML = `
+                <div class="p-3 rounded-xl max-w-[80%] shadow-md ${sender === 'user' ? 'user-message-bubble' : 'bot-message-bubble'}">
+                    ${message}
+                </div>
+            `;
+            chatMessages.appendChild(messageDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight; // Scroll to bottom
+        }
+
+        async function sendMessage() {
+            const message = userInput.value.trim();
+            if (message === '') return;
+
+            appendMessage('user', message);
+            userInput.value = ''; // Clear input
+
+            // Show a typing indicator or disable input
+            userInput.disabled = true;
+            sendButton.disabled = true;
+            sendButton.textContent = 'Sending...';
+
+            try {
+                const response = await fetch('/chat', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ message: message, session_id: sessionId })
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    appendMessage('bot', data.response);
+                } else {
+                    appendMessage('bot', `Error: ${data.error || 'Could not get a response.'}`);
+                }
+            } catch (error) {
+                console.error('Fetch error:', error);
+                appendMessage('bot', 'Oops! Something went wrong. Please try again.');
+            } finally {
+                userInput.disabled = false;
+                sendButton.disabled = false;
+                sendButton.textContent = 'Send';
+                userInput.focus(); // Focus back on input
+            }
+        }
+
+        function handleKeyPress(event) {
+            if (event.key === 'Enter') {
+                sendMessage();
+            }
+        }
+
+        // Focus on input when page loads
+        window.onload = () => {
+            userInput.focus();
+        };
+        // Reset conversation logic
+        async function resetConversation() {
+            if (!sessionId) return;
+            if (!confirm('Are you sure you want to reset this conversation? This will erase all chat history for this session.')) return;
+            try {
+                const response = await fetch('/reset_session', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ session_id: sessionId })
+                });
+                const data = await response.json();
+                if (response.ok) {
+                    // Clear chat window and show welcome
+                    chatMessages.innerHTML = `<div class='flex justify-start'><div class='bot-message-bubble p-3 rounded-xl max-w-[80%] shadow-md'>Hello! I am your Astrology Bot. Ask me anything about zodiac signs.</div></div>`;
+                } else {
+                    appendMessage('bot', `Error: ${data.error || 'Could not reset session.'}`);
+                }
+            } catch (error) {
+                appendMessage('bot', 'Oops! Could not reset conversation.');
+            }
+        }
+    </script>
+</body>
+</html>

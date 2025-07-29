@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Astrology Bot Admin Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2em; background: #f8f8fa; }
+        h1 { color: #3b3b6d; }
+        table { border-collapse: collapse; width: 100%; margin-top: 1em; background: #fff; }
+        th, td { border: 1px solid #ccc; padding: 0.5em; text-align: left; }
+        th { background: #ececff; }
+        tr:hover { background: #f1f1ff; }
+        .session-link { color: #2c3e50; text-decoration: underline; cursor: pointer; }
+        .back-btn { margin-bottom: 1em; }
+        .stats { margin-bottom: 2em; }
+    </style>
+</head>
+<body>
+    <h1>Astrology Bot Admin Dashboard</h1>
+    <div class="stats" id="stats"></div>
+    <h2>Recent Sessions</h2>
+    <table id="sessions-table">
+        <thead>
+            <tr>
+                <th>Session ID</th>
+                <th>Created At</th>
+                <th>Last Activity</th>
+                <th>Message Count</th>
+            </tr>
+        </thead>
+        <tbody id="sessions-body"></tbody>
+    </table>
+    <div id="session-detail" style="display:none; margin-top:2em;"></div>
+    <button class="back-btn" id="back-btn" style="display:none;">Back to Dashboard</button>
+    <script>
+        function fetchStatsAndSessions() {
+            fetch('/admin/stats').then(r => r.json()).then(data => {
+                document.getElementById('stats').innerHTML =
+                    `<b>Total Sessions:</b> ${data.stats.total_sessions} &nbsp; | &nbsp; <b>Total Messages:</b> ${data.stats.total_messages} &nbsp; | &nbsp; <b>Active (24h):</b> ${data.stats.active_sessions_24h}`;
+                const tbody = document.getElementById('sessions-body');
+                tbody.innerHTML = '';
+                data.recent_sessions.forEach(s => {
+                    tbody.innerHTML += `<tr><td><span class="session-link" onclick="viewSession('${s.session_id}')">${s.session_id}</span></td><td>${s.created_at}</td><td>${s.last_activity}</td><td>${s.message_count}</td></tr>`;
+                });
+            });
+        }
+        function viewSession(session_id) {
+            fetch(`/admin/session/${session_id}`).then(r => r.json()).then(data => {
+                const detail = document.getElementById('session-detail');
+                detail.innerHTML = `<h3>Session: ${data.session_id}</h3><table><thead><tr><th>Type</th><th>Message</th><th>Timestamp</th></tr></thead><tbody>${data.history.map(m => `<tr><td>${m.type}</td><td>${m.content}</td><td>${m.timestamp}</td></tr>`).join('')}</tbody></table>`;
+                detail.style.display = '';
+                document.getElementById('sessions-table').style.display = 'none';
+                document.getElementById('back-btn').style.display = '';
+            });
+        }
+        document.getElementById('back-btn').onclick = function() {
+            document.getElementById('session-detail').style.display = 'none';
+            document.getElementById('sessions-table').style.display = '';
+            document.getElementById('back-btn').style.display = 'none';
+        };
+        fetchStatsAndSessions();
+    </script>
+</body>
+</html>
