@@ -1,0 +1,236 @@
+{
+    "Zodiac Signs General": {
+        "definition": "A zodiac sign is one of the twelve divisions of the zodiac, each associated with a specific period of the year and believed to influence personality traits and life events. These signs are derived from constellations that lie along the ecliptic, the apparent path of the Sun across the celestial sphere over the course of a year. Each sign has unique characteristics, elements, ruling planets, and symbols.",
+        "dates": "Not applicable (general concept)",
+        "about_astrology": "Astrology is a pseudoscience that claims to discern information about human affairs and terrestrial events by studying the movements and relative positions of celestial objects. It's often used for self-understanding and guidance, but should not be taken as definitive predictions.",
+        "how_it_works": "Astrology operates on the principle that the positions of celestial bodies at the time of a person's birth (or a specific event) can influence their personality, destiny, and the flow of events. This is interpreted through various systems, including zodiac signs, planetary aspects, and houses."
+    },
+    "Aries": {
+        "dates": "March 21 - April 19",
+        "symbol": "Ram",
+        "element": "Fire",
+        "ruling_planet": "Mars",
+        "traits": "Adventurous, energetic, pioneering, courageous, enthusiastic, confident, quick-witted, impulsive, impatient, aggressive.",
+        "compatibility": "Best with Leo, Sagittarius, Gemini, Aquarius.",
+        "outlook": "Aries individuals are natural leaders, always ready to take on new challenges. They thrive on excitement and can sometimes be a bit headstrong. Their passion is infectious, but they should watch out for impatience.",
+        "yearly_forecasts": {
+            "2025": {
+                "general": "2025 could be a year of significant personal growth and new beginnings for Aries. Expect opportunities to step into leadership roles and expand your horizons. Financial matters may see improvement.",
+                "love": "Your relationships might experience a renewed spark. Single Aries could meet someone intriguing, while those in partnerships may find deeper connection through shared adventures.",
+                "career": "Career growth is favorable, especially in fields that allow for independence and innovation. Be prepared to take calculated risks for professional advancement."
+            }
+        },
+        "daily_horoscope_template": "Aries, today is a good day for [action]. Be mindful of [caution]. Your lucky color is [color].",
+        "love_compatibility_general": "Aries thrives with partners who match their energy and enthusiasm. They need excitement and a sense of adventure in a relationship. Communication should be direct and honest.",
+        "career_outlook": "Aries excel in roles that demand quick decisions, leadership, and a pioneering spirit. Entrepreneurship, sales, sports, and emergency services are often good fits."
+    },
+    "Taurus": {
+        "dates": "April 20 - May 20",
+        "symbol": "Bull",
+        "element": "Earth",
+        "ruling_planet": "Venus",
+        "traits": "Patient, reliable, warm-hearted, loving, persistent, determined, placid, security-loving, jealous, possessive, inflexible.",
+        "compatibility": "Best with Virgo, Capricorn, Cancer, Pisces.",
+        "outlook": "Taurus values stability and comfort. They are grounded and appreciate the finer things in life. While loyal and dependable, they can also be stubborn. Patience is their virtue, but they should avoid becoming too rigid.",
+        "yearly_forecasts": {
+            "2025": {
+                "general": "For Taurus in 2025, focus will likely be on stability and consolidating gains. It's a good year for financial planning and securing your future. Personal relationships become a significant source of comfort.",
+                "love": "Existing relationships may deepen, fostering a greater sense of security. Single Taurus individuals might attract stable and grounded partners. Focus on building trust.",
+                "career": "Your dedication will pay off in your career. Opportunities for steady advancement or taking on more responsibility within your current role are likely. Patience and persistence are key."
+            }
+        },
+        "daily_horoscope_template": "Taurus, today is ideal for [activity]. Avoid [pitfall]. Your lucky number is [number].",
+        "love_compatibility_general": "Taurus seeks stability, loyalty, and sensual pleasure in love. They are devoted partners who appreciate consistency and comfort. They need a partner who values security as much as they do.",
+        "career_outlook": "Taurus performs well in professions requiring patience, precision, and an appreciation for beauty or tangible results. Finance, art, real estate, and culinary arts are often suitable."
+    },
+    "Gemini": {
+        "dates": "May 21 - June 20",
+        "symbol": "Twins",
+        "element": "Air",
+        "ruling_planet": "Mercury",
+        "traits": "Adaptable, versatile, communicative, intellectual, eloquent, lively, nervous, tense, superficial, inconsistent, cunning.",
+        "compatibility": "Best with Libra, Aquarius, Aries, Leo.",
+        "outlook": "Gemini is characterized by duality and a thirst for knowledge. They are excellent communicators and highly adaptable, but can sometimes struggle with indecision or superficiality. Their curious nature keeps life interesting.",
+        "yearly_forecasts": {
+            "2025": {
+                "general": "2025 promises a dynamic year for Gemini, filled with learning and new connections. Expect increased social activity and mental stimulation. Be open to new ideas and perspectives.",
+                "love": "Communication is key in relationships this year. You may find new, exciting people entering your social circle. Existing partnerships benefit from engaging conversations and shared intellectual pursuits.",
+                "career": "Career could see a boost through networking and effective communication. Roles involving writing, teaching, media, or sales will be particularly favorable."
+            }
+        },
+        "daily_horoscope_template": "Gemini, today highlights [focus_area]. Be careful with [challenge]. Your lucky day is [day_of_week].",
+        "love_compatibility_general": "Gemini needs mental stimulation and freedom in a relationship. They thrive with partners who can keep up with their quick wit and varied interests. Boredom is their enemy.",
+        "career_outlook": "Gemini excels in careers that involve communication, information exchange, and multitasking. Journalism, teaching, sales, public relations, and tech are often good fits."
+    },
+    "Cancer": {
+        "dates": "June 21 - July 22",
+        "symbol": "Crab",
+        "element": "Water",
+        "ruling_planet": "Moon",
+        "traits": "Emotional, loving, intuitive, imaginative, shrewd, cautious, protective, sympathetic, moody, pessimistic, clingy, overemotional.",
+        "compatibility": "Best with Scorpio, Pisces, Taurus, Virgo.",
+        "outlook": "Cancer is deeply emotional and nurturing, with a strong connection to home and family. They are highly intuitive and protective of loved ones, but can be prone to mood swings. Their empathy is a great strength.",
+        "yearly_forecasts": {
+            "2025": {
+                "general": "For Cancer, 2025 emphasizes home, family, and emotional well-being. It’s a good year for strengthening domestic foundations and nurturing your inner self. You might also find new ways to express your creativity.",
+                "love": "Relationships take on a more profound, nurturing quality. Family connections become very important. Single Cancers might find love within their close social circles or through family introductions.",
+                "career": "Career stability is favored. Roles where you can care for others, provide support, or work in a nurturing environment will be most fulfilling. Opportunities for remote work may arise."
+            }
+        },
+        "daily_horoscope_template": "Cancer, today focuses on [theme]. Nurture [aspect]. Your element is [element].",
+        "love_compatibility_general": "Cancer desires emotional security and deep intimacy. They are caring and protective partners who value a strong home life. They need a partner who understands their emotional depth.",
+        "career_outlook": "Cancers often thrive in careers that allow them to nurture, care for, or support others. Healthcare, teaching, social work, childcare, and hospitality are common paths."
+    },
+    "Leo": {
+        "dates": "July 23 - August 22",
+        "symbol": "Lion",
+        "element": "Fire",
+        "ruling_planet": "Sun",
+        "traits": "Generous, warm-hearted, creative, enthusiastic, broad-minded, expansive, faithful, loving, pompous, patronizing, bossy, interfering.",
+        "compatibility": "Best with Aries, Sagittarius, Gemini, Libra.",
+        "outlook": "Leo loves to be the center of attention and thrives on admiration. They are generous, confident, and natural leaders. While they possess great warmth, they should be mindful of becoming overly dramatic or arrogant.",
+        "yearly_forecasts": {
+            "2025": {
+                "general": "Leo's 2025 is set to be a year of self-expression, creativity, and recognition. Your confidence will shine, attracting opportunities for personal and professional advancement. Embrace your authentic self.",
+                "love": "Romance is highlighted, bringing passion and excitement. Existing relationships will benefit from shared creative pursuits. Single Leos are likely to attract attention and new admirers.",
+                "career": "Your talents will be recognized, leading to opportunities for promotion or new projects. Public-facing roles or those requiring creative input will be particularly successful."
+            }
+        },
+        "daily_horoscope_template": "Leo, today brings [opportunity]. Share your [quality]. Your ruling planet is [planet].",
+        "love_compatibility_general": "Leo seeks passion, admiration, and a partner who appreciates their unique flair. They are generous and loyal lovers who enjoy grand romantic gestures. They need a partner who celebrates their individuality.",
+        "career_outlook": "Leos shine in careers that allow them to lead, perform, and inspire. Entertainment, management, marketing, education, and creative fields are often well-suited."
+    },
+    "Virgo": {
+        "dates": "August 23 - September 22",
+        "symbol": "Maiden",
+        "element": "Earth",
+        "ruling_planet": "Mercury",
+        "traits": "Modest, shy, meticulous, reliable, practical, diligent, analytical, intelligent, fussy, worrying, overcritical, harsh.",
+        "compatibility": "Best with Taurus, Capricorn, Cancer, Scorpio.",
+        "outlook": "Virgo is known for their meticulous nature and attention to detail. They are practical, analytical, and always striving for perfection. While helpful and hardworking, they can sometimes be overly critical of themselves and others.",
+        "yearly_forecasts": {
+            "2025": {
+                "general": "2025 for Virgo emphasizes practical improvements and refining daily routines. It's an excellent year for organizing, health initiatives, and skill development. Attention to detail brings rewards.",
+                "love": "Relationships will benefit from practical support and thoughtful gestures. You might find love in everyday routines or through shared hobbies focused on self-improvement. Communication needs to be clear.",
+                "career": "Career growth comes through diligent work and improving your expertise. Roles requiring analysis, organization, or service will be fulfilling. Your contributions will be valued for their precision."
+            }
+        },
+        "daily_horoscope_template": "Virgo, today focus on [task]. Organize your [area]. Your symbol is [symbol].",
+        "love_compatibility_general": "Virgo seeks a partner who is practical, intelligent, and appreciative of their efforts. They show love through acts of service and thoughtful gestures. They need a partner who values order and self-improvement.",
+        "career_outlook": "Virgos are excellent in professions that require precision, analysis, and organization. Healthcare, research, editing, accounting, and teaching are often good fits."
+    },
+    "Libra": {
+        "dates": "September 23 - October 22",
+        "symbol": "Scales",
+        "element": "Air",
+        "ruling_planet": "Venus",
+        "traits": "Diplomatic, urbane, romantic, charming, easygoing, sociable, idealistic, peaceful, indecisive, changeable, gullible, easily influenced.",
+        "compatibility": "Best with Gemini, Aquarius, Leo, Sagittarius.",
+        "outlook": "Libra seeks balance and harmony in all aspects of life. They are diplomatic, charming, and value fairness. Their desire to please can sometimes lead to indecisiveness. They thrive in partnerships.",
+        "yearly_forecasts": {
+            "2025": {
+                "general": "Libra in 2025 will find a strong emphasis on partnerships, both personal and professional. It's a year for finding balance and making important decisions. Social harmony is key to your well-being.",
+                "love": "Relationships are a major focus. Existing partnerships may reach new milestones, while single Libras could meet significant others who bring balance to their lives. Seek harmony and compromise.",
+                "career": "Collaborative projects and partnerships in your career will be highly beneficial. Diplomacy and your ability to mediate will be valuable assets. Opportunities for negotiation may arise."
+            }
+        },
+        "daily_horoscope_template": "Libra, today seek [harmony]. Avoid [conflict]. Your element is [element].",
+        "love_compatibility_general": "Libra desires balance, harmony, and an intellectually stimulating partner. They are romantic and strive for fairness in relationships. They need a partner who values partnership and aesthetics.",
+        "career_outlook": "Libras excel in careers that involve negotiation, diplomacy, and aesthetics. Law, public relations, design, counseling, and human resources are often good fits."
+    },
+    "Scorpio": {
+        "dates": "October 23 - November 21",
+        "symbol": "Scorpion",
+        "element": "Water",
+        "ruling_planet": "Pluto (traditional: Mars)",
+        "traits": "Determined, forceful, emotional, intuitive, powerful, passionate, exciting, magnetic, jealous, resentful, secretive, obstinate.",
+        "compatibility": "Best with Cancer, Pisces, Virgo, Capricorn.",
+        "outlook": "Scorpio is intense, passionate, and mysterious. They possess deep emotional strength and are highly intuitive. While fiercely loyal, they can also be secretive or prone to jealousy. They are driven by transformation.",
+        "yearly_forecasts": {
+            "2025": {
+                "general": "2025 holds a transformative energy for Scorpio, encouraging deep self-discovery and growth. You may face situations that require you to let go of old patterns and embrace change. Hidden truths may come to light.",
+                "love": "Relationships could experience profound shifts. You might delve deeper into intimacy, or some connections may undergo significant transformations. Trust and honesty are paramount.",
+                "career": "Opportunities for substantial change or advancement could arise, especially in fields related to research, finance, psychology, or anything requiring deep investigation. Be strategic and focused."
+            }
+        },
+        "daily_horoscope_template": "Scorpio, today embrace [change]. Focus on [intensity]. Your ruling planet is [planet].",
+        "love_compatibility_general": "Scorpio seeks deep emotional and spiritual connection. They are intensely loyal and passionate partners who value trust and honesty above all. They need a partner who can handle their depth.",
+        "career_outlook": "Scorpios thrive in careers that involve investigation, transformation, and deep analysis. Research, psychology, detective work, finance, and healing professions are often suitable."
+    },
+    "Sagittarius": {
+        "dates": "November 22 - December 21",
+        "symbol": "Archer",
+        "element": "Fire",
+        "ruling_planet": "Jupiter",
+        "traits": "Optimistic, freedom-loving, jovial, good-humored, honest, straightforward, intellectual, philosophical, blind optimism, careless, irresponsible, tactless.",
+        "compatibility": "Best with Aries, Leo, Libra, Aquarius.",
+        "outlook": "Sagittarius is adventurous, optimistic, and loves freedom. They are philosophical and enjoy exploring new ideas and places. While honest and enthusiastic, they can sometimes be tactless or restless.",
+        "yearly_forecasts": {
+            "2025": {
+                "general": "2025 for Sagittarius is a year of expansion, travel, and learning. Your optimistic spirit will attract new opportunities for growth and adventure. Embrace new philosophies and experiences.",
+                "love": "Relationships may be energized by shared travel or intellectual pursuits. Single Sagittarians might find love with someone from a different background or culture. Maintain your independence.",
+                "career": "Career growth could come through expanding your knowledge, travel for work, or entering fields related to education, publishing, or international relations. Your enthusiasm is a major asset."
+            }
+        },
+        "daily_horoscope_template": "Sagittarius, today seek [adventure]. Explore new [ideas]. Your element is [element].",
+        "love_compatibility_general": "Sagittarius seeks a partner who shares their love for freedom, adventure, and intellectual exploration. They value honesty and a sense of humor. They need a partner who encourages their independence.",
+        "career_outlook": "Sagittarians excel in careers that offer freedom, travel, and opportunities for learning and teaching. Education, travel, philosophy, law, and publishing are often good fits."
+    },
+    "Capricorn": {
+        "dates": "December 22 - January 19",
+        "symbol": "Goat",
+        "element": "Earth",
+        "ruling_planet": "Saturn",
+        "traits": "Practical, prudent, ambitious, disciplined, patient, careful, humorous, reserved, pessimistic, fatalistic, miserly, grudging.",
+        "compatibility": "Best with Taurus, Virgo, Scorpio, Pisces.",
+        "outlook": "Capricorn is disciplined, ambitious, and highly practical. They are focused on achieving their goals and value tradition. While responsible and hardworking, they can sometimes be overly serious or pessimistic.",
+        "yearly_forecasts": {
+            "2025": {
+                "general": "2025 will be a year of significant progress and achievement for Capricorn. Your hard work and discipline will pay off, leading to recognition and material gains. Focus on long-term goals.",
+                "love": "Relationships may become more serious or committed. You'll seek a partner who aligns with your long-term goals and values stability. Show your affectionate side more openly.",
+                "career": "This is a prime year for career advancement. Opportunities for leadership, promotion, or starting significant long-term projects are likely. Your reputation and status will improve."
+            }
+        },
+        "daily_horoscope_template": "Capricorn, today prioritize [goal]. Be [disciplined]. Your symbol is [symbol].",
+        "love_compatibility_general": "Capricorn seeks a partner who is reliable, ambitious, and committed. They are loyal and supportive, valuing long-term stability and shared goals. They need a partner who respects their drive.",
+        "career_outlook": "Capricorns excel in careers that require discipline, structure, and leadership. Management, finance, engineering, architecture, and administration are often well-suited."
+    },
+    "Aquarius": {
+        "dates": "January 20 - February 18",
+        "symbol": "Water Bearer",
+        "element": "Air",
+        "ruling_planet": "Uranus (traditional: Saturn)",
+        "traits": "Friendly, humanitarian, honest, loyal, original, inventive, independent, intellectual, aloof, eccentric, rebellious, unpredictable.",
+        "compatibility": "Best with Gemini, Libra, Aries, Sagittarius.",
+        "outlook": "Aquarius is innovative, independent, and humanitarian. They are forward-thinking and value intellectual stimulation. While friendly and original, they can sometimes appear emotionally detached or unpredictable.",
+        "yearly_forecasts": {
+            "2025": {
+                "general": "2025 for Aquarius emphasizes innovation, social connections, and humanitarian pursuits. It's a year to embrace your unique ideas and contribute to your community. Expect unexpected opportunities.",
+                "love": "Relationships may be unconventional and intellectually stimulating. You'll seek partners who respect your independence and share your progressive ideals. Group activities can lead to new connections.",
+                "career": "Career success comes through innovative thinking and networking. Fields related to technology, social causes, research, or anything cutting-edge will be favorable. Embrace collaborative projects."
+            }
+        },
+        "daily_horoscope_template": "Aquarius, today innovate in [area]. Connect with [group]. Your ruling planet is [planet].",
+        "love_compatibility_general": "Aquarius seeks intellectual connection and a partner who respects their independence and individuality. They are loyal but need freedom within a relationship. They need a partner who appreciates their unique perspective.",
+        "career_outlook": "Aquarians thrive in careers that involve innovation, technology, social work, and humanitarian efforts. Science, programming, activism, design, and research are often good fits."
+    },
+    "Pisces": {
+        "dates": "February 19 - March 20",
+        "symbol": "Fish",
+        "element": "Water",
+        "ruling_planet": "Neptune (traditional: Jupiter)",
+        "traits": "Imaginative, sensitive, compassionate, kind, selfless, intuitive, sympathetic, artistic, escapist, idealistic, secretive, vague.",
+        "compatibility": "Best with Cancer, Scorpio, Taurus, Capricorn.",
+        "outlook": "Pisces is compassionate, artistic, and highly intuitive. They are deeply empathetic and often drawn to creative pursuits. While kind and selfless, they can sometimes be prone to escapism or being overly idealistic.",
+        "yearly_forecasts": {
+            "2025": {
+                "general": "2025 for Pisces brings a strong focus on intuition, creativity, and spiritual growth. It's a year to connect with your inner self and explore artistic or mystical interests. Be mindful of boundaries.",
+                "love": "Relationships will be deeply emotional and spiritual. You might feel a stronger connection with your partner on an intuitive level. Single Pisces could meet someone who profoundly touches their soul.",
+                "career": "Career paths that involve creativity, healing, compassion, or spiritual work will be most rewarding. Art, music, therapy, social services, or any humanitarian field could see success."
+            }
+        },
+        "daily_horoscope_template": "Pisces, today connect with your [intuition]. Express your [creativity]. Your element is [element].",
+        "love_compatibility_general": "Pisces seeks a soulful, empathetic, and romantic partner. They are deeply compassionate and give freely of themselves. They need a partner who understands their emotional depth and appreciates their artistic side.",
+        "career_outlook": "Pisces excels in careers that involve creativity, compassion, and intuition. Arts, healing professions, counseling, social work, and spiritual guidance are often good fits."
+    }
+}
